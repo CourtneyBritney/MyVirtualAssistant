@@ -41,21 +41,21 @@ def Take_query():
 			speak("Opening Google ")
 			webbrowser.open("www.google.com")
 		# this will exit and terminate the program
-	elif "bye" in query:
-		speak("Okay Bye.")
-		exit()
-	elif "from wikipedia" in query:
-		speak("Checking the wikipedia ")
-		query = query.replace("wikipedia", "")
-		result = wikipedia.summary(query, sentences=2)
-		speak("According to wikipedia")
-		speak(result)
-	elif "tell me your name" in query:
-		speak("I am Courtney. Your desktop Assistant")
+		elif "bye" in query:
+			speak("Okay Bye.")
+			exit()
+		elif "from wikipedia" in query:
+			speak("Checking the wikipedia ")
+			query = query.replace("wikipedia", "")
+			result = wikipedia.summary(query, sentences=2)
+			speak("According to wikipedia")
+			speak(result)
+		elif "tell me your name" in query:
+			speak("I am Courtney. Your desktop Assistant")
 
-	if __name__ == '__main__':
-		# main method for executing
-		# the functions
-		Take_query()
+		if __name__ == '__main__':
+			# main method for executing
+			# the functions
+			Take_query()
 
 
